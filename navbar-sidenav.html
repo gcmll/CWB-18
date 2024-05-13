@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/87ed0dd451.js" crossorigin="anonymous"></script>
     <!-- Font Awesome cdnjs -->
@@ -19,18 +21,31 @@
         <nav class="nav-extended cyan darken-4">
             <div class="container">
                 <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><i class="fa-solid fa-ghost"></i></i></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><i class="fa-solid fa-bars"></i></i></a>
+                <a href="#" class="brand-logo"><i class="fa-solid fa-ghost"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">Notifications</a></li>
-                    <li><a href="#" target="_blank">Message</a></li>
-                    <li><a href="#" target="_blank">Profile</a></li>
+                    <li><a href="#!" target="_blank">Home</a></li>
+                    <li><a href="#!" target="_blank">Notifications</a></li>
+                    <li><a href="#!" target="_blank">Message</a></li>
+                    <li><a href="#!" target="_blank">Profile</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Settings</a></li>
+            <li><a href="#!">Privacy</a></li>
+            <li><a href="#!">Terms</a></li>
+            <li><a href="#!">Condition</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Logout</a></li>
+        </ul>
     </div>
 
+    
+    <!-- Start -->
     <h1 class="red-text text-lighten-2 center">Navbar</h1>
     <div class="divider"></div>
 
@@ -39,6 +54,7 @@
         <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
         </p>
 
+        <!-- Right Aligned Links Navbar -->
         <h3 class="blue-text text-darken-2">Right Aligned Links</h3>
         <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
 
@@ -59,6 +75,7 @@
             </div>
         </nav>
 
+        <!-- Left Aligned Links Navbar -->
         <br>
         <h3 class="black-text text-darken-2">Left Aligned Links</h3>
         <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
@@ -79,7 +96,7 @@
             </div>
         </nav>
 
-        
+        <!-- Centering the logo Navbar -->
         <br>
         <h3 class="pink-text text-darken-2">Centering the logo</h3>
         <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.</p>
@@ -101,6 +118,7 @@
             </div>
         </nav>
 
+        <!-- Active Items Navbar -->
         <br>
         <h3 class="deep-orange-text text-accent-3">Active Items</h3>
         <p>Add active class to your li tags to denote the current page.</p>
@@ -122,6 +140,7 @@
             </div>
         </nav>
 
+        <!-- Extended Navbar with Tabs Navbar -->
         <br>
         <h3 class="indigo-text text-darken-4">Extended Navbar with Tabs</h3>
         <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
@@ -131,15 +150,16 @@
             <div class="container">
                 <div class="nav-wrapper">
                 <a href="#" class="brand-logo"><i class="fa-brands fa-tumblr"></i></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><i class="fa-solid fa-bars"></i></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">Notifications</a></li>
-                    <li><a href="#" target="_blank">Message</a></li>
-                    <li><a href="#" target="_blank">Profile</a></li>
+                    <li><a href="#!" target="_blank">Home</a></li>
+                    <li><a href="#!" target="_blank">Notifications</a></li>
+                    <li><a href="#!" target="_blank">Message</a></li>
+                    <li><a href="#!" target="_blank">Profile</a></li>
                 </ul>
             </div>
 
+            <!-- Navbar Content-->
             <div class="nav-content">
                 <ul class="tabs tabs-transparent">
                     <li class="tab"><a href="#image">Image</a></li>
@@ -151,10 +171,10 @@
 
         <!-- Sidenav Structure-->
         <ul class="sidenav indigo darken-4" id="mobile-demo">
-            <li><a href="#" class="white-text" target="_blank">Home</a></li>
-            <li><a href="#" class="white-text" target="_blank">Notifications</a></li>
-            <li><a href="#" class="white-text" target="_blank">Message</a></li>
-            <li><a href="#" class="white-text" target="_blank">Profile</a></li>
+            <li><a href="#!" class="white-text" target="_blank">Home</a></li>
+            <li><a href="#!" class="white-text" target="_blank">Notifications</a></li>
+            <li><a href="#!" class="white-text" target="_blank">Message</a></li>
+            <li><a href="#!" class="white-text" target="_blank">Profile</a></li>
         </ul>
         
         <!-- Tabs Structure -->
@@ -182,12 +202,45 @@
             </div>
         </div> 
         
+        <!-- Fixed Navbar -->
         <br>
-        <h3 class="blue-text text-darken-2">Fixed Navbar</h3>
+        <h3 class="cyan-text text-darken-2">Fixed Navbar</h3>
         <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
 
 
-        
+        <!-- Dropdown Menu Navbar -->
+        <br>
+        <h3 class="red-text darken-4">Navbar Dropdown Menu</h3>
+        <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+
+        <nav class="red darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="https://facebook.com/" class="brand-logo" target="_blank">
+                        <i class="fa-brands fa-quora"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-only	hide-on-small-only">
+                        <li><a href="https://www.quora.com/" target="_blank">Home</a></li>
+                        <li><a href="https://www.quora.com/following" target="_blank">Following</a></li>
+                        <li><a href="https://www.quora.com/" target="_blank">Spaces</a></li>
+                        <li><a href="" class="dropdown-trigger" data-target="dropdown2"><i class="material-icons">arrow_drop_down</i></a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Dropdown Structure-->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!">Business</a></li>
+                    <li><a href="#!">Science</a></li>
+                    <li><a href="#!">Aviation</a></li>
+                    <li><a href="#!">Math</a></li>
+                    <li><a href="#!">Crafts</a></li>
+                    <li><a href="#!">Music</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Explore More</a></li>
+                </ul>
+            </div>
+        </nav>    
     </div>
 
 
@@ -207,6 +260,10 @@
 
             //sidenav init
             $('.sidenav').sidenav();
+
+            //dropdown init
+            $('.dropdown-trigger').dropdown();
+
         });
     </script>
 </body>
