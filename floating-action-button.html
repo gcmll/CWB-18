@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/87ed0dd451.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Floating Action Button</title>
+</head>
+<body>
+    <h1 class="red-text text-lighten-2 center">Floating Action Button</h1>
+    <div class="divider"></div>
+
+    <br>
+    <div class="container">
+        <p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+
+        <!-- Vertical/Hover FAB-->
+        <div class="fixed-action-btn direction-top">
+            <a class="btn-floating btn-large" style="background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <ul>
+                <li><a href="" class="btn-floating red"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="" class="btn-floating orange"><i class="fa-solid fa-gift"></i></a></li>
+                <li><a href="" class="btn-floating yellow darken-2"><i class="fa-solid fa-tag"></i></a></li>
+                <li><a href="" class="btn-floating green"><i class="fa-solid fa-comments"></i></a></li>
+                <li><a href="" class="btn-floating blue darken-4"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="" class="btn-floating purple"><i class="fa-solid fa-bell"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Horizontal/Hover FAB -->
+        <br>
+        <h3 class="red-text text-lighten-2">Horizontal FAB</h3>
+        <p>Creating a horizontal FAB is easy! Just set the direction option.</p>
+
+        <div class="floating-action-btn-container" style="background-color: rgb(175, 200, 238);">
+            <div class="fixed-action-btn direction-left" style="position: absolute; right: 24px;">
+                <a class="btn-floating btn-large" style="background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%);">
+                    <i class="fa-solid fa-upload"></i>
+                </a>
+                <ul>
+                    <li><a href="" class="btn-floating red"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="" class="btn-floating orange"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="" class="btn-floating yellow darken-2"><i class="fa-solid fa-music"></i></a></li>
+                    <li><a href="" class="btn-floating green"><i class="fa-solid fa-video"></i></a></li>
+                    <li><a href="" class="btn-floating blue darken-4"><i class="fa-solid fa-link"></i></a></li>
+                    <li><a href="" class="btn-floating purple"><i class="fa-solid fa-pen"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Horizontal/Click-Only FAB -->
+        <br>
+        <h3 class="red-text text-lighten-2">Click-only FAB</h3>
+        <p>If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), just add the click-to-toggle class to the FAB.</p>
+
+        <div class="floating-action-btn-container" style="background-color: rgb(216, 151, 151);">
+            <div class="fixed-action-btn click-to-toggle direction-left" style="position: absolute; right: 24px;">
+                <a class="btn-floating btn-large" style="background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%);">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <ul>
+                    <li><a href="" class="btn-floating red"><i class="fa-brands fa-square-vimeo"></i></a></li>
+                    <li><a href="" class="btn-floating orange"><i class="fa-brands fa-square-reddit"></i></a></li>
+                    <li><a href="" class="btn-floating yellow darken-2"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="" class="btn-floating green"><i class="fa-brands fa-square-threads"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Horizontal/Toolbar/Click-Only FAB -->
+        <br>
+        <h3 class="red-text text-lighten-2">FAB to Toolbar</h3>
+        <p>Instead of displaying individual button options, you can transition your FAB into a toolbar on click. Just add the toolbar class to the FAB.</p>
+
+        <div class="floating-action-btn-container" style="background-color: rgb(106, 148, 141);">
+            <div class="fixed-action-btn toolbar" style="position: absolute; right: 24px;">
+                <a class="btn-floating btn-large teal darken-4" style="background-image: linear-gradient(to right, #34e89e 0%, #0f3443  51%, #34e89e  100%);">
+                    <i class="fa-solid fa-star"></i>
+                </a>
+                <ul>
+                    <li><a href="" class="btn-floating"><i class="fa-solid fa-hashtag"></i></a></li>
+                    <li><a href="" class="btn-floating"><i class="fa-solid fa-gamepad"></i></a></li>
+                    <li><a href="" class="btn-floating"><i class="fa-solid fa-palette"></i></a></li>
+                    <li><a href="" class="btn-floating"><i class="fa-solid fa-font"></i></a></li>
+                    <li><a href="" class="btn-floating"><i class="fa-regular fa-compass"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+        // floating action button init
+        $('.fixed-action-btn').each(function() {
+            if ($(this).hasClass('click-to-toggle')) {
+                $(this).floatingActionButton({
+                    hoverEnabled: false,
+                    toolbarEnabled: false
+                });
+            } else if ($(this).hasClass('toolbar')) {
+                $(this).floatingActionButton({
+                    hoverEnabled: false,
+                    toolbarEnabled: true
+                });
+            } else {
+                $(this).floatingActionButton({
+                    hoverEnabled: true,
+                    toolbarEnabled: false,
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
+
+
