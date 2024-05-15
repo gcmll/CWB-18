@@ -25,11 +25,13 @@
     <br>
     <div class="container">
         <div class="row">
-            <div class="col s8">
+            <div class="col s12 m8">
                 <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
 
                 <!-- Container Demo -->
-                <h3 class="red-text text-lighten-2 bold">Container</h3>
+                <div id="container" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2 bold">Container</h3>
+                </div>
                 <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
                 <p class="flow-text bold">Demo</p>
                 <p>Try the button below to see what the page looks like without containers.</p>
@@ -66,8 +68,11 @@
 
                 <p>To add a container just put your content inside a <code class="language-markup"><"div"></code> tag with a container class. Here's an example of how your page might be set up.</p>
 
+                <!-- Introduction -->
                 <br>
-                <h3 class="red-text text-lighten-2">Introduction</h3>
+                <div id="introduction" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Introduction</h3>
+                </div>
                 <p>Take a look at this section to quickly understand how the grid works!</p>
 
                 <!-- 12 Columns -->
@@ -75,41 +80,149 @@
                 <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
 
                 <br>
-                <div class="row">
-                    <div class="col s12 m3 l6 xl1 red"><p class="flow-text center white-text">1</p></div>
-                    <div class="col s12 m3 l6 xl1 orange"><p class="flow-text center white-text">2</p></div>
-                    <div class="col s12 m3 l6 xl1 yellow darken-2"><p class="flow-text center white-text">3</p></div>
-                    <div class="col s12 m3 l6 xl1 green"><p class="flow-text center white-text">4</p></div>
-                    <div class="col s12 m3 l6 xl1 cyan"><p class="flow-text center white-text">5</p></div>
-                    <div class="col s12 m3 l6 xl1 blue"><p class="flow-text center white-text">6</p></div>
-                    <div class="col s12 m3 l6 xl1 indigo"><p class="flow-text center white-text">7</p></div>
-                    <div class="col s12 m3 l6 xl1 purple"><p class="flow-text center white-text">8</p></div>
-                    <div class="col s12 m3 l6 xl1 red"><p class="flow-text center white-text">9</p></div>
-                    <div class="col s12 m3 l6 xl1 orange"><p class="flow-text center white-text">10</p></div>
-                    <div class="col s12 m3 l6 xl1 yellow darken-2"><p class="flow-text center white-text">11</p></div>
-                    <div class="col s12 m3 l6 xl1 green"><p class="flow-text center white-text">12</p></div>
+                <div class="row center white-text">
+                    <div class="col s12 m3 l6 xl1 red"><p class="flow-text">1</p></div>
+                    <div class="col s12 m3 l6 xl1 orange"><p class="flow-text">2</p></div>
+                    <div class="col s12 m3 l6 xl1 yellow darken-2"><p class="flow-text">3</p></div>
+                    <div class="col s12 m3 l6 xl1 green"><p class="flow-text">4</p></div>
+                    <div class="col s12 m3 l6 xl1 cyan"><p class="flow-text">5</p></div>
+                    <div class="col s12 m3 l6 xl1 blue"><p class="flow-text">6</p></div>
+                    <div class="col s12 m3 l6 xl1 indigo"><p class="flow-text">7</p></div>
+                    <div class="col s12 m3 l6 xl1 purple"><p class="flow-text">8</p></div>
+                    <div class="col s12 m3 l6 xl1 red"><p class="flow-text">9</p></div>
+                    <div class="col s12 m3 l6 xl1 orange"><p class="flow-text">10</p></div>
+                    <div class="col s12 m3 l6 xl1 yellow darken-2"><p class="flow-text">11</p></div>
+                    <div class="col s12 m3 l6 xl1 green"><p class="flow-text">12</p></div>
                 </div>
     
+                <p>Note: For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".</p>
+
+                <!-- Columns live inside Rows -->
+                <p class="flow-text bold">Columns live inside Row</p>
+                <p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns.</p>
+
+                <div class="row white-text center">
+                    <div class="col s12 red grid-blocks">
+                        <p>This div is 12-columns wide on all screen sizes</p>
+                    </div>
+                    <div class="col s6 orange grid-blocks">
+                        <p>6-columns (one-half)</p>
+                    </div>
+                    <div class="col s6 yellow darken-2 grid-blocks">
+                        <p>6-columns (one-half)</p>
+                    </div>
+                </div>
+
+                <!-- Offsets -->
                 <br>
-                <p>To get a feel of how the grid is used in HTML, take a look at the code below which will produce a similar result to the one above.</p>
+                <div id="offsets" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Offsets</h3>
+                </div>
+                <p>To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.</p>
+
+                <div class="row">
+                    <div class="col s12 green grid-blocks"><p class="flow-text center white-text">This div is 12-columns wide on all screen sizes</p></div>
+                    <div class="col s6 offset-s6 cyan grid-blocks"><p class="flow-text center white-text">6-columns (offset-by-6)</p></div>
+                </div>
+
+                <!-- Push and Pull -->
+                <br>
+                <div id="push-and-pull" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Push and Pull</h3>
+                </div>
+                <p>You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.</p>
+
+                <div class="row">
+                    <div class="col s7 push-s5 m7 l12 indigo grid-blocks"><p class="flow-text center white-text">This div is 7-columns wide on pushed to the right by 5-columns.</p></div>
+                    <div class="col s5 pull-s7 m5 l12 purple grid-blocks"><p class="flow-text center white-text">5-columns wide pulled to the left by 7-column</p></div>
+                </div>
+
+                <!-- Creating Layouts -->
+                <br>
+                <div id="creating-layouts" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Creating Layouts</h3>
+                </div>
+                <p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.</p>
+
+                <!-- Section and Divider -->
+                <div class="row">
+                    <div class="col s12 m6">
+                        <p class="flowtext bold">Section</p>
+                        <p>The section class is used for simple top and bottom padding. Just add the section class to your div's containing large blocks of content.</p>
+                    </div>
+                    <div class="col s12 m6">
+                        <p class="flowtext bold">Divider</p>
+                        <p>Dividers are 1 pixel lines that help break up your content. Just add the divider to a div in between your content.</p>
+                    </div>
+
+                    <div class="col s12">
+                        <p class="flowtext bold">Example Sections and Dividers</p>
+                        <div class="divider red"></div>
+                        <p class="flowtext bold">Section 1</p>
+                        <p>This is for section 1</p>
+                        <div class="divider orange"></div>
+                        <p class="flowtext bold">Section 2</p>
+                        <p>This is for section 2</p>
+                        <div class="divider yellow darken-2"></div>
+                        <p class="flowtext bold">Section 3</p>
+                        <p>This is for section 3</p>
+                    </div>
+                </div>
+
+                <!-- Example Promotion Table -->
+                <p class="flow-text bold">Example Promotion Table</p>
+                <p>If we want 3 divs that are equal size, we define the divs with a width of 4-columns, as 4+4+4 nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example.</p>
+
+                <div class="row center">
+                    <div class="col s12 m4">
+                        <i class="fa-brands fa-square-facebook large blue-text text-darken-3"></i>
+                        <h5 class="blue-text text-darken-3">Facebook</h5>
+                        <p>Transform your connections into lifelong friendships with Facebook – where every moment matters!</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <i class="fa-brands fa-square-twitter large blue-text text-lighten-1"></i>
+                        <h5 class="blue-text text-lighten-1">Twitter</h5>
+                        <p>Join Twitter today and be part of the conversation that shapes the world!</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <i class="fa-brands fa-square-instagram large instagram-color"></i>
+                        <h5 class="instagram-color">Instgram</h5>
+                        <p>Capture and share your best moments with Instagram – where your story comes to life!</p>
+                    </div>
+                </div>
 
             </div> 
 
             <!-- Advertisement Column -->
-            <div class="col s4 sticky-top hide-on-small-only">
+            <div class="col s12 m4 sticky-top hide-on-small-only">
                 <div class="row">
                     <img src="images/adobe-stock.jpg" alt="" class="responsive-img col s8 offset-s4 margin-top">
-                    <a href="" class="red-text text-lighten-1 text-stock-link col s8 offset-s4"><br>Get 10 Free Images<br></a>
+                    <a href="" class="red-text text-lighten-1 text-stock-link col s8 offset-s4">Get 10 Free Images</a>
                     <a href="" class="red-text text-lighten-1 text-stock-link col s8 offset-s4">From Adobe Stock</a>
                     <a href="" class="red-text text-lighten-1 text-stock-link col s8 offset-s4">Start Now</a>
                     <a href="" class="grey-text text-darken-1 text-stock-link-small center col s8 offset-s4"><br>Ads via Carbon</a>
+
+                    <!-- ScrollSpy  -->
+                    <div class="col s8 offset-s4">
+                        <ul class="section table-of-contents">
+                            <li><a href="#container">Container</a></li>
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#offsets">Offsets</a></li>
+                            <li><a href="#push-and-pull">Push and Pull</a></li>
+                            <li><a href="#creating-layouts">Creating Layouts</a></li>
+                            <li><a href="#responsive-layouts">Responsive Layouts</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-        </div> 
+        </div>
+        
     </div>
 
 
     <div style="height: 1000px;"></div>
+
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -129,6 +242,9 @@
                     $('#toggleButton').text('Turn on Containers');
                 }
             });
+
+            //scrollspy init
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>

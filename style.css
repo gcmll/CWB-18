@@ -316,3 +316,24 @@ body {
 .browser-window .row {
     margin: 0
 }
+
+.text-scrollspy {
+    font-weight: 100;
+    font-size: 75%;
+}
+
+.grid-blocks{
+    margin: 7px 0;
+}
+
+.instagram-color {
+    color: transparent;
+    background: radial-gradient(circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e57bc 100%);
+    background-clip: text;
+}
+
