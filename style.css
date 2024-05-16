@@ -337,3 +337,11 @@ body {
     background-clip: text;
 }
 
+/* CSS  for Parallax*/
+.uppercase{
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
